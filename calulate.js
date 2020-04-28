@@ -34,7 +34,7 @@ document.getElementById("ans").innerHTML= ans;
 
         else if(input.includes(splitmul)){
   var div= input.split("*").map(x => +x);//changes the array of string created by split() function to an array of intergers   
-var ans= div[0] - div[1];
+var ans= div[0] * div[1];
 document.getElementById("ans").innerHTML= ans;
 
 }
