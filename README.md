@@ -3,10 +3,13 @@
 ---------------------
 
 For basic Arithmetic calculations
---Subtraction--
-++Addition++
-//Division//
-**Multiplication**
+**--Subtraction--**
+
+**++Addition++**
+
+**//Division//**
+
+**xxMultiplicationxx**
 
 ----------------------
 Coming Soon
