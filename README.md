@@ -15,7 +15,8 @@ For basic Arithmetic calculations
 ----------------------
 Coming Soon
 ----------------------
-COS
-SIN
-TAN
+COS,
+SIN,
+TAN,
+COMPLICATED CALCULATIONS
 
