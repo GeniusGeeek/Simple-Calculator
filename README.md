@@ -18,5 +18,7 @@ Coming Soon
 COS,
 SIN,
 TAN,
-COMPLICATED CALCULATIONS
+Complicated Calculations,
+Improved GUI,
+Improved Code Structure
 
