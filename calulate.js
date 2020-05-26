@@ -27,7 +27,7 @@ $(document).ready(function() {
       //inputs.pop();
       //delprint = inputs.join('');
       $(".screen-display").html('');
-       inputs = [];
+        inputs.length = 0;
       $(".screen-ans").html("");
       //$(".screen-display").html(inputs);
    });
