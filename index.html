@@ -2,40 +2,122 @@
 <html>
     <head>
         <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="style/css" href="styles/style.css"/>
-        <link rel="stylesheet" type="style/css"  href="../bootstrap/css/bootstrap.css" />
-        <script type="text/javascript" src="calulate.js" /> </script>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                <link rel="stylesheet" type="text/css"  href="bootstrap.css" />
         <title>Simple Calculator</title>
     </head>
     <body>
-       <center><h1>
-        Simple  calculator
-        </h1>
-<!-- //sample: Input in this format: value/value, example: 4/2 in textbox to caculate -->
-      </h1>
+      
 
- <input type="text" id="input" /><br><br> Equals <b><span id="ans" > </span></b><br ><br>
- <input onclick="calculate()" class="btn" value="calculate" type="submit" id="cal" />
- </center> 
+ <div class="container-fluid"><br>
+   <div class="row">
+     <div class="col-md-6 col-xs-12 center-block calContainer" style="float: none;"><br>
+     <div class="row">
+       <div class="col-md-12 ">
+        <h3> <div class="screen-display">&nbsp;&nbsp;</div></h3>
+        <h1> <div class="screen-ans">&nbsp;&nbsp;</div></h1>
+       </div>
+     </div><br>
+     <form id="form">
+
+     <div class="row">
+       <div class="col-md-3 col-xs-3"><button type="button" value="" id="clear"  class="btn gold">C</button></div>
+       <div class="col-md-3 col-xs-3"><button type="button" value="" id="del" class="btn gold"> Del</button></div>
+        <div class="col-md-3 col-xs-3"><button type="button" value="%" id="btn" class="btn gold">%</button></div>
+         <div class="col-md-3 col-xs-3"><button type="button" value="/" id="btn" class="btn goldl">/</button></div>
+     </div>
+     <br>
+
+     <div class="row">
+       <div class="col-md-3 col-xs-3"><button type="button" value="7" id="btn"  class="btn grey">7</button></div>
+       <div class="col-md-3 col-xs-3"><button type="button" value="8" id="btn" class="btn grey"> 8</button></div>
+        <div class="col-md-3 col-xs-3"><button type="button" value="9" class="btn grey">9</button></div>
+         <div class="col-md-3 col-xs-3"><button type="button" value="*" class="btn goldl">x</button></div>
+     </div>     <br>
+
+
+  <div class="row">
+       <div class="col-md-3 col-xs-3"><button type="button" value="4" class="btn grey">4</button></div>
+       <div class="col-md-3 col-xs-3"><button type="button" value="5" class="btn grey"> 5</button></div>
+        <div class="col-md-3 col-xs-3"><button type="button" value="6" class="btn grey">6</button></div>
+         <div class="col-md-3 col-xs-3"><button type="button" value="+" class="btn goldl">+</button></div>
+     </div>     <br>
+
+
+<div class="row">
+       <div class="col-md-3 col-xs-3"><button type="button" value="1" class="btn grey">1</button></div>
+       <div class="col-md-3 col-xs-3"><button type="button" value="2" class="btn grey"> 2</button></div>
+        <div class="col-md-3 col-xs-3"><button type="button" value="3" class="btn grey">3</button></div>
+         <div class="col-md-3 col-xs-3"><button type="button" value="-" class="btn goldl">-</button></div>
+     </div>     <br>
+
+
+<div class="row">
+       <div class="col-md-3 col-xs-3"><button type="button" value="0" class="btn grey ">0</button></div>
+       <div class="col-md-3 col-xs-3"><button type="button" value="." class="btn grey"> .</button></div>
+        <div class="col-md-6 col-xs-6"><button   type="submit" id="sumbit" class="btn goldl col-md-6 col-xs-6">=</button></div>
+     </div><br>
+
+</form>
+     </div>
+   </div>
+
+ </div>
+ <script type="text/javascript" src="jqueryv1.js"></script>
+  <script type="text/javascript" src="calulate.js" /> </script>
  </body>
 
  <style>
+  body{
+    font-family: Lato-Regular;
+  }
+  h1, h3{
+    font-family: MavenPro-Regular;
+  }
+.screen-display{
+  height: 70px;
+  font-size: 25px;
+  border: 0.5px solid #BEAB45;
+  border-radius:10px;
+  vertical-align: middle;
+  line-height: 70px;
+}
 
-   #cal{
-background-color:#BEAB45;
-border:none;
-color:white;
-padding: 15px 25px;
+.calContainer{
+  border:1px solid lightgrey;
+}
+
+.gold{
+  background-color: #BEAB45;
+  color: white;
+}
+
+.goldl{
+  background-color: #E4CB5A;
+  color: white;
+}
+.btn{
+  outline: 0 !important;
+  border:0 !important;
+}
+
+
+
+
+@media screen and(max-width:  500px){
+  body, html{
+    height: 100%;
   }
 
-h1{
-color:#BEAB45;
+  .calContainer{
+    height: 100%;
+  }
+  .container-fluid{
+    height: 100%;
+    overflow: auto;
+  }
 }
- 
-#input{
-border-color: #BEAB45;
-height:25px;
-border-radius:5px;
+
 } 
          
 </style>
