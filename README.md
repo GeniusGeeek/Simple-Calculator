@@ -11,3 +11,5 @@ Coming Soon
 ----------------------
 Trigonometric Functions and calculations
 
+github pages: https://geniusgeeek.github.io/Simple-Calculator/
+
