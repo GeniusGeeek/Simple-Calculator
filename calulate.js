@@ -1,41 +1,32 @@
-
-function calculate(){
-var input = document.getElementById("input").value;
-var splitmul= "*"; var splitdiv= "/"; var splitadd= "+"; var splitsub= "-";
-        
-//division
-        
-if(input.includes(splitdiv)){
-var div= input.split("/").map(x => +x);//changes the array of string created by split() function to an array of intergers 
-var ans= div[0] / div[1];
-document.getElementById("ans").innerHTML= ans;
- }
-
-//addition 
-
-else if(input.includes(splitadd)){
-var div= input.split("+").map(x => +x);//changes the array of string created by split() function to an array of intergers
-var ans= div[0] + div[1];
-document.getElementById("ans").innerHTML= ans;
-}
-
-//subtraction
-
-else if(input.includes(splitsub)){
-var div= input.split("-").map(x => +x);//changes the array of string created by split() function to an array of intergers
-var ans= div[0] - div[1];
-document.getElementById("ans").innerHTML= ans;
-}
-
-//multiplication
-
-else if(input.includes(splitmul)){
-var div= input.split("*").map(x => +x);//changes the array of string created by split() function to an array of intergers   
-var ans= div[0] * div[1];
-document.getElementById("ans").innerHTML= ans;
-}
-
-else{
-alert("math error");
-}
-}
+$(document).ready(function() {
+   var inputs = [];
+   var print;
+   var ans;
+   var delprint;
+   $('.btn').click(function() {
+      var input = $(this).val();
+      newinput = inputs.push(input);
+      console.log(input);
+      console.log(inputs);
+      print = inputs.join('');
+      $(".screen-display").html(print);
+   });
+   $('#sumbit').click(function() {
+      event.preventDefault();
+      ans = eval(print);
+      console.log(print);
+      console.log(ans);
+      $(".screen-ans").html(ans);
+   });
+   $('#clear').click(function() {
+      $(".screen-display").html("");
+      $(".screen-ans").html("");
+   });
+   $('#del').click(function() {
+      inputs.pop();
+      delprint = inputs.join('');
+      $(".screen-display").html('');
+      $(".screen-ans").html("");
+      $(".screen-display").html(inputs);
+   });
+});
