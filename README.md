@@ -2,23 +2,12 @@
 # Simple-Calculator
 ---------------------
 
-For basic Arithmetic calculations
+A Javascript calculator for arithmetic calculations
 
-**--Subtraction--**
 
-**++Addition++**
-
-**//Division//**
-
-**xxMultiplicationxx**
 
 ----------------------
 Coming Soon
 ----------------------
-COS,
-SIN,
-TAN,
-Complicated Calculations,
-Improved GUI,
-Improved Code Structure
+Trigonometric Functions and calculations
 
