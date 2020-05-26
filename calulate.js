@@ -20,13 +20,15 @@ $(document).ready(function() {
    });
    $('#clear').click(function() {
       $(".screen-display").html("");
+      inputs = [];
       $(".screen-ans").html("");
    });
    $('#del').click(function() {
-      inputs.pop();
-      delprint = inputs.join('');
+      //inputs.pop();
+      //delprint = inputs.join('');
       $(".screen-display").html('');
+       inputs = [];
       $(".screen-ans").html("");
-      $(".screen-display").html(inputs);
+      //$(".screen-display").html(inputs);
    });
 });
