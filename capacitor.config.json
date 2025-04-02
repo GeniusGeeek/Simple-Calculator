@@ -1,0 +1,12 @@
+{
+    "appId": "com.geeksimplecalculator.com",
+    "appName": "simpleCalculator",
+    "webDir": "www",
+
+    "android": {
+        "buildOptions": {
+
+            "javaVersion": "17"
+        }
+    }
+}
